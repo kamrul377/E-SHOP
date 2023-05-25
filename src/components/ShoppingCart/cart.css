@@ -1,0 +1,113 @@
+
+body{
+    background-color: #f7f7f7;
+}
+.box{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #f7f7f7;
+}
+.cart-image {
+	height: 183px;
+	/* border-bottom: 2px da aliceblue#66666617; */
+	border-bottom: 2px solid #f6f6f6;
+	object-fit: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.cart-image::before {
+	content: "50% sale's off";
+	position: absolute;
+	height: 20px;
+	width: 91px;
+	background-color: #771877;
+	top: 0%;
+	left: -5%;
+	/* overflow: hidden; */
+	overflow-x: clip;
+	border-radius: 0 20px 20px 0;
+	font-size: 12px;
+	color: white;
+}
+.cart-image img{
+	transition: .4s;
+}
+.cart-image img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.box .cart-box {
+	background: transparent;
+	grid-template-columns: 3;
+	margin: 10px;
+	border: 1px solid #ddd;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 3px 3px 9px -1px #ddd;
+}
+.box .cart-details{
+    margin-top: 10px;
+}
+.box .cart-details .text{
+    font-size: 12px;
+    color: #333;
+    
+}
+.box .cart-details .price{
+    color: #ef4a23;
+    font-weight: bold;
+    display: flex;
+    
+}
+.price del{
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+.add-btn {
+	background-color: #f2efef;
+	margin-top: 20px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #444;
+	transition: .3s;
+}
+.add-btn:hover{
+	background-color: rgb(162, 162, 211);
+	color: black;
+}
+
+.btn-cart{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: #081621;
+	color: white;
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.btn-cart .btn{
+	color: white;
+}
+.btn-cart span{
+	font-size: 12px;
+}

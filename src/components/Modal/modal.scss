@@ -1,0 +1,54 @@
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+    .cart-box{ 
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.cancel-icon{
+    cursor: pointer;
+}
+.cart-box{
+
+    .product{
+        width: 100%;
+        background-color: #f7f7f7;
+        height: 100px;
+        margin: 5px 0;
+        padding: 8px;
+
+
+        .img{
+            
+
+
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

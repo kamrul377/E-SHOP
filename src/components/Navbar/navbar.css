@@ -1,0 +1,85 @@
+
+img{
+    max-width: 100%;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #081621;
+    padding: 0 10px;
+}
+.navbar img{
+    width: 110px;
+    padding: 6px;
+}
+
+
+.logo{
+    flex: 10%;
+}
+
+/* search bar */
+.search-bar{
+    flex: 40%;
+}
+.search-bar input {
+	border: none;
+	padding: 5px 10px;
+	font-weight: normal;
+	border-radius: 4px;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: normal;
+	width: 70%;
+    color: #777;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.menu{
+    flex: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+	
+}
+.menu .nav-selection-box {
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+}
+.menu .nav-selection-box .text h3{
+	font-size: 14px;
+}
+.menu .nav-selection-box svg{
+    margin-right: 8px;
+    color: orangered;
+
+
+}
+.menu .nav-selection-box svg{
+	animation: blinker 2s linear infinite;
+}
+
+
+
+
+/* button  */
+.nav-btn {
+	background: transparent;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #fff;
+	transition: .3s;
+	border: 1px solid #7674b3;
+}
+.nav-btn:hover{
+    background: #fff;
+	color: black;
+}
+.menu .nav-selection-box small{
+    color: #777;
+}

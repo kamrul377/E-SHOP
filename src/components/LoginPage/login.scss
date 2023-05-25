@@ -1,0 +1,96 @@
+.login {
+	/* width: 500px; */
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+    h2{
+        margin-bottom: 33px;
+        color: #555;
+        
+    }
+
+    .form{
+        background-color: white;
+        padding: 10px;
+        background-color: white;
+        padding: 23px;
+        box-shadow: 4px 4px 17px #0000001f;
+
+        .password{
+            position: relative;
+        }
+        .icon{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            color: #444;
+        }
+        .input {
+            display: block;
+            width: 347px;
+            color: #222;
+            padding: 8px 10px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            margin: 8px 0;
+        }
+        
+        .check{
+
+            display: flex;
+            margin: 22px 0px;
+            justify-content: space-between;
+
+
+
+            .remember {
+            font-size: 17px;
+            display: flex;
+            gap: 4px;
+            
+
+            }
+
+        .forgot a{
+            text-decoration: none;
+            color: rgb(73, 73, 212);
+            font-size: 15px;
+        }
+        }
+        
+        button{
+            width: 100%;
+            background-color: rgba(62, 62, 219, 0.993);
+            color: white;
+            padding: 7px 0;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            transition: .3s ease-in-out;
+
+            &:hover{ 
+                background-color: rgb(46, 46, 189);
+            }
+        }
+    
+        
+    }
+
+    .error{
+        color: red;
+        font-size: 14px;
+        text-align: center;
+    }
+
+   
+}
